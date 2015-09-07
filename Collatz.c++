@@ -29,13 +29,35 @@ pair<int, int> collatz_read (const string& s) {
     sin >> i >> j;
     return make_pair(i, j);}
 
+// helper method for collatz_eval
+
+int collatz_eval_helper (int n) {
+    assert (n > 0);
+    int c = 1;
+    while (n > 1) {
+        if ((n%2) == 0)
+            n = n/2;
+        else 
+            n = (3 * n) + 1;
+        ++c;
+    }
+    assert (c > 0);
+    return c;
+}
 // ------------
 // collatz_eval
 // ------------
 
 int collatz_eval (int i, int j) {
     // <your code>
-    return 1;}
+    int max = 0;
+
+    for (int a = i; a <= j; ++a) {
+        int evaluate = collatz_eval_helper(a);
+        if (evaluate > max)
+            max = evaluate;
+    } 
+    return max;}
 
 // -------------
 // collatz_print
