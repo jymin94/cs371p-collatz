@@ -42,21 +42,27 @@ int collatz_eval_helper (int n) {
         ++c;
     }
     assert (c > 0);
-    return c;
-}
+    return c;} 
+
 // ------------
 // collatz_eval
 // ------------
 
 int collatz_eval (int i, int j) {
-    // <your code>
+    assert (i > 0 && j > 0);
+    assert (i < 1000000 && j < 1000000);
+    
     int max = 0;
+    if (i > j) {
+        int temp = i;
+        i = j;
+        j = temp;}
 
     for (int a = i; a <= j; ++a) {
         int evaluate = collatz_eval_helper(a);
         if (evaluate > max)
-            max = evaluate;
-    } 
+            max = evaluate;}
+ 
     return max;}
 
 // -------------
