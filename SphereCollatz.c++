@@ -14,7 +14,7 @@
 #include <string>   // getline, string
 #include <utility>  // make_pair, pair
 
-#include "Collatz.h"
+//#include "Collatz.h"
 
 using namespace std;
 
