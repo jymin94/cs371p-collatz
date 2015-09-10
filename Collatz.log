@@ -1,3 +1,27 @@
+commit 989191f3fbdd01d70e35083aca7dbcf9c93e7dd1
+Author: JiYoung Min <jymin94@cs.utexas.edu>
+Date:   Thu Sep 10 18:19:44 2015 -0500
+
+    Fixed the SphereCollatz.c++. Fixes #20
+
+commit 413ac7d1bd677720c3d8c6205a350c3d453b4e30
+Author: JiYoung Min <jymin94@cs.utexas.edu>
+Date:   Thu Sep 10 02:42:47 2015 -0500
+
+    Deleted Doxyfile
+
+commit a2b4f76899b15a7118fcb22933ef506f5910de22
+Author: JiYoung Min <jymin94@cs.utexas.edu>
+Date:   Wed Sep 9 23:17:26 2015 -0500
+
+    Fixed the .travis.yml file. Resolves #14
+
+commit 3c6e185c6435b3de81f70169351c327a1a956f5c
+Author: JiYoung Min <jymin94@cs.utexas.edu>
+Date:   Wed Sep 9 22:58:06 2015 -0500
+
+    Added doxygen file and Collatz.log
+
 commit 4a9fbf9fc59dd7a31809d1309184498085daf086
 Author: JiYoung Min <jymin94@cs.utexas.edu>
 Date:   Wed Sep 9 22:46:57 2015 -0500
