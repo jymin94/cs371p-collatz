@@ -17,7 +17,7 @@
 #include "Collatz.h"
 
 using namespace std;
-#define CACHE_SIZE 50000
+#define CACHE_SIZE 500000
 
 // ------------
 // collatz_read
