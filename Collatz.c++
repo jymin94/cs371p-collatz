@@ -17,7 +17,8 @@
 #include "Collatz.h"
 
 using namespace std;
-int cache [50000] = {};
+#define CACHE_SIZE 50000
+
 // ------------
 // collatz_read
 // ------------
@@ -33,8 +34,13 @@ pair<int, int> collatz_read (const string& s) {
 
 int collatz_eval_helper (int n) {
     assert (n > 0);
-    if (n < 50000 && cache[n] != 0)
+
+    #ifdef CACHE_SIZE 
+    int cache [CACHE_SIZE] = {};
+    if (n < CACHE_SIZE && cache[n] != 0)
         return cache[n];
+    #endif
+
     int c = 1;
     while (n > 1) {
         int new_n;
@@ -44,11 +50,12 @@ int collatz_eval_helper (int n) {
         else {
             new_n = (3 * n) + 1;
         }
-        
-        if (new_n < 50000 && cache[new_n] != 0) {
+    #ifdef CACHE_SIZE        
+        if (new_n < CACHE_SIZE && cache[new_n] != 0) {
             cache[n] = cache[new_n] + 1;
             return cache[n];
         }
+    #endif
         n = new_n;
         ++c;
     }
