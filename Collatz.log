@@ -1,0 +1,97 @@
+commit 4a9fbf9fc59dd7a31809d1309184498085daf086
+Author: JiYoung Min <jymin94@cs.utexas.edu>
+Date:   Wed Sep 9 22:46:57 2015 -0500
+
+    Fixed cache
+
+commit 58f60b4c60aa991419dfcd030c8da2b6cee67fd0
+Author: JiYoung Min <jymin94@cs.utexas.edu>
+Date:   Wed Sep 9 22:15:39 2015 -0500
+
+    Corrected numbers...
+
+commit a0f8b3cec9c289f3b9c88f791deeddc4d1cb2ff7
+Author: JiYoung Min <jymin94@cs.utexas.edu>
+Date:   Wed Sep 9 21:38:54 2015 -0500
+
+    Added ifdef. Resolves #11
+
+commit e9fc034bf678584588b8d1fce11ec29fdc34936b
+Author: JiYoung Min <jymin94@cs.utexas.edu>
+Date:   Wed Sep 9 21:25:13 2015 -0500
+
+    Implemented lazy cache. Resolves #10
+
+commit 9fc40b3f80ca31f5166a59189605c4405a110071
+Author: JiYoung Min <jymin94@cs.utexas.edu>
+Date:   Wed Sep 9 20:36:51 2015 -0500
+
+    Adding SphereCollatz.c++ that successfully passes on Sphere! Resolves #13
+
+commit a482ae369761724f0bdfcab8a896177110e93758
+Merge: a8a75ee 2e8c080
+Author: JiYoung Min <jymin94@cs.utexas.edu>
+Date:   Wed Sep 9 19:34:14 2015 -0500
+
+    Merge branch 'dev'
+
+commit 2e8c080a6aa399ae5709b2f10c6a0c817f924b1b
+Author: JiYoung Min <jymin94@cs.utexas.edu>
+Date:   Wed Sep 9 19:29:26 2015 -0500
+
+    REALLY correct TestCollatz.c++
+
+commit a8a75eecbd901a364caaa876dde795e2b0a2410d
+Merge: 24c3fdd dd0968c
+Author: JiYoung Min <jymin94@cs.utexas.edu>
+Date:   Wed Sep 9 19:23:29 2015 -0500
+
+    Merge branch 'dev'
+
+commit dd0968cee33753274f3d3ea76e7309e9d7440f8f
+Author: JiYoung Min <jymin94@cs.utexas.edu>
+Date:   Wed Sep 9 19:20:14 2015 -0500
+
+    Correct TestCollatz.c++
+
+commit 24c3fddf6185ed99ac80285c2d67bf2616091c0f
+Author: JiYoung Min <jymin94@cs.utexas.edu>
+Date:   Wed Sep 9 19:11:36 2015 -0500
+
+    Added extra tests and added helper method into Collatz.h. Fixes #9
+
+commit 547bdecd5cc4179028b6443c3ecedc98abf07733
+Author: JiYoung Min <jymin94@cs.utexas.edu>
+Date:   Mon Sep 7 10:29:34 2015 -0500
+
+    Fixed RunCollatz.out
+
+commit f307a053e4b1bfb96de7ca006b685961270c4352
+Author: JiYoung Min <jymin94@cs.utexas.edu>
+Date:   Mon Sep 7 01:36:31 2015 -0500
+
+    Updated Collatz and TestCollatz
+
+commit bb778b1ae4f5221501a02158c3e7859e17adcc83
+Author: Jiyoung Min <jymin94@gmail.com>
+Date:   Sun Sep 6 15:49:43 2015 -0500
+
+    fixed .travis.yml
+
+commit ccad8d5de424735c0bcb03db674f5acb96c2fabb
+Author: Jiyoung Min <jymin94@gmail.com>
+Date:   Sun Sep 6 15:47:01 2015 -0500
+
+    copied over files from public repo
+
+commit 94b389a53be5581f98c5dc25dd9745dbd3073d85
+Author: Jiyoung Min <jymin94@gmail.com>
+Date:   Sun Sep 6 12:19:49 2015 -0500
+
+    added .travis.yml file
+
+commit df3c5580df9b7e9cd79f5378f77e23f3042b100a
+Author: JiYoung Min <jymin94@utexas.edu>
+Date:   Mon Aug 31 14:54:19 2015 -0500
+
+    Initial commit
