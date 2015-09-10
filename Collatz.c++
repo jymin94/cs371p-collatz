@@ -18,6 +18,9 @@
 
 using namespace std;
 #define CACHE_SIZE 500000
+#ifdef CACHE_SIZE 
+int cache [CACHE_SIZE] = {};
+#endif
 
 // ------------
 // collatz_read
@@ -36,7 +39,6 @@ int collatz_eval_helper (int n) {
     assert (n > 0);
 
     #ifdef CACHE_SIZE 
-    int cache [CACHE_SIZE] = {};
     if (n < CACHE_SIZE && cache[n] != 0)
         return cache[n];
     #endif
@@ -51,7 +53,7 @@ int collatz_eval_helper (int n) {
             new_n = (3 * n) + 1;
         }
     #ifdef CACHE_SIZE        
-        if (new_n < CACHE_SIZE && cache[new_n] != 0) {
+        if (n < CACHE_SIZE && new_n < CACHE_SIZE && cache[new_n] != 0) {
             cache[n] = cache[new_n] + 1;
             return cache[n];
         }
