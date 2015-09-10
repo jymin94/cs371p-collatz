@@ -17,7 +17,7 @@
 #include "Collatz.h"
 
 using namespace std;
-
+int cache [50000] = {};
 // ------------
 // collatz_read
 // ------------
@@ -33,12 +33,23 @@ pair<int, int> collatz_read (const string& s) {
 
 int collatz_eval_helper (int n) {
     assert (n > 0);
+    if (n < 50000 && cache[n] != 0)
+        return cache[n];
     int c = 1;
     while (n > 1) {
-        if ((n%2) == 0)
-            n = n/2;
-        else 
-            n = (3 * n) + 1;
+        int new_n;
+        if ((n%2) == 0) {
+            new_n = n/2;
+        }
+        else {
+            new_n = (3 * n) + 1;
+        }
+        
+        if (new_n < 50000 && cache[new_n] != 0) {
+            cache[n] = cache[new_n] + 1;
+            return cache[n];
+        }
+        n = new_n;
         ++c;
     }
     assert (c > 0);
@@ -84,3 +95,4 @@ void collatz_solve (istream& r, ostream& w) {
         const int            j = p.second;
         const int            v = collatz_eval(i, j);
         collatz_print(w, i, j, v);}}
+
